@@ -35,8 +35,8 @@ public class Digit {
 		//kan lage en streng hvor vi aksesserer elementet med posisjon "value"
 		String str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		return str.charAt(value) + "";
-		//tom streng på slutten ettersom den charAt ikke returnerer en streng?
-		//charAt() returnerer bokstaven/objektet på indexen som er spesifisert i en streng.
+		//tom streng pÃ¥ slutten ettersom den charAt ikke returnerer en streng?
+		//charAt() returnerer bokstaven/objektet pÃ¥ indexen som er spesifisert i en streng.
 	}
 	
 	//Main

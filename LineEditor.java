@@ -29,12 +29,12 @@ public class LineEditor {
 	}
 	
 	public void right() {
-		//flytter tekstinnsettingsposisjonen ett tegn til høyre (tilsvarende bruk av høyre piltast)
+		//flytter tekstinnsettingsposisjonen ett tegn til hÃ¸yre (tilsvarende bruk av hÃ¸yre piltast)
 		insertionIndex += insertionIndex;
 	}
 	
 	public void insertString(String s) {
-		//skyter teksten angitt av argumentet s inn i teksten på tekstinnsettingsposisjonen og forskyver tekstinnsettingsposisjonen mot høyre tilsvarende
+		//skyter teksten angitt av argumentet s inn i teksten pÃ¥ tekstinnsettingsposisjonen og forskyver tekstinnsettingsposisjonen mot hÃ¸yre tilsvarende
 	}
 	
 	public void deleteLeft() {
@@ -44,7 +44,7 @@ public class LineEditor {
 	}
 	
 	public void deleteRight() {
-		//fjerner tegnet til høyre for tekstinnsettingsposisjonen
+		//fjerner tegnet til hÃ¸yre for tekstinnsettingsposisjonen
 	}
 	//toString
 	@Override

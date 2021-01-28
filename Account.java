@@ -6,7 +6,7 @@ public class Account {
 	public double interestRate;
 	
 	
-	//Konstruktør
+	//KonstruktÃ¸r
 	public Account(double balance, double interestRate) {
 		this.balance = balance;
 		this.interestRate = interestRate;
@@ -30,7 +30,7 @@ public class Account {
 	@Override
 	public String toString() {
 		//overrider den innebygde toString() 
-		return "Du har " + balance + " på bankkontoen med " + interestRate + " rente.";
+		return "Du har " + balance + " pÃ¥ bankkontoen med " + interestRate + " rente.";
 	}
 	
 	//Metoder
@@ -51,7 +51,7 @@ public class Account {
 	
 	//Main
 	public static void main(String[] args) {
-    	//static gjør at en metode eller et felt hører til en klasse, og ikke et objekt. Det at main-metoden er static, betyr at vi kan kalle metoden, uten å kalle instansen av en klasse.
+    	//static gjÃ¸r at en metode eller et felt hÃ¸rer til en klasse, og ikke et objekt. Det at main-metoden er static, betyr at vi kan kalle metoden, uten Ã¥ kalle instansen av en klasse.
     	Account account = new Account(0, 0.09); //lager en instans av klassen Account
     	account.deposit(1000);
         System.out.println(account);
@@ -63,6 +63,3 @@ public class Account {
         System.out.println(account);
     }
 }
-
-
-
