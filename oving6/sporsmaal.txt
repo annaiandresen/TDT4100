@@ -1,0 +1,23 @@
+**Delegering:**
+En instans av et objekt kan delegere arbeid videre for å lette på arbeidsmengde. 
+Altså: Det er en teknikk for delegerende som bruker et annet internt objekt (delegat) til å utføre en metode. 
+
+Den delegerende har et sett med metoder som OGSÅ finnes hos delegaten(e). 
+I den delegerende sin metode kaller den på delegaten.metode(). 
+
+
+**Observatør-Observert**
+Observatøren ønsker å observere at informasjoenn på objekt A finnes på objekt B. 
+
+Den observerte kan selv legge til og fjerne observatører, i tillegg til at den kan endre sin egen tilstand. En hovedteknikk denne innehar er å varsel sine obervatører om eventuelle endringer. 
+Den observerte må implementere et Observatørgrensesnitt som vi definerer selv (IKKE BRUK DE INNEBYGDE). 
+
+Observatøren tar imot beskjeder om tilstandsendringer i objekt den observerer. Den kan også endre tilstander og gjøre spesifikke hanedlinger dersom den gis beskjed. 
+
+Eksempel:
+Vi har en klasse Regjering som varsler eventuelle regelendringer av koronarestriksjoner.
+Det er mange som er interesserte i disse regelendringene: bedrifter, universitet, privatpersoner, osv. 
+Vi kan si at hver av disse er en klasse. 
+For at disse kan lytte til Regjeringen, må det finnes et obervatørgrensesnitt som vi kan kalle "RegelEndringLytter" som har én abstrakt metode: void restriksjonsAlarm(Regjering, String).  
+Bedrift-, Universitet- og PrivatPersonklassene må implementere dette grensesnittet og bli registrert som lyttere av Regjeringklassen. 
+
